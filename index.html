@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Viện Ảnh Tương Tác</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+        <h1>Thư Viện Ảnh Tuyệt Vời</h1>
+    </header>
+
+    <div id="image-gallery">
+        <div id="display-area">
+            <img id="main-image" src="https://s3.cloud.cmctelecom.vn/tinhte1/2017/12/4205775_C.jpg" alt="Di chuột qua ảnh nhỏ để xem ở đây.">
+            <p id="image-description">Di chuột qua một ảnh nhỏ bên dưới để xem ảnh lớn và mô tả.</p>
+        </div>
+
+        <div id="thumbnail-container">
+            <img class="thumbnail" 
+                 src="https://s3.cloud.cmctelecom.vn/tinhte1/2017/12/4205775_C.jpg" 
+                 alt="Mô tả ảnh thứ nhất - URL duy nhất" 
+                 tabindex="0"
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()">
+
+            <img class="thumbnail" 
+                 src="https://s3.cloud.cmctelecom.vn/tinhte1/2017/12/4205775_C.jpg" 
+                 alt="Mô tả ảnh thứ hai - URL duy nhất" 
+                 tabindex="0"
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()">
+
+            <img class="thumbnail" 
+                 src="https://s3.cloud.cmctelecom.vn/tinhte1/2017/12/4205775_C.jpg" 
+                 alt="Mô tả ảnh thứ ba - URL duy nhất" 
+                 tabindex="0"
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()">
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
